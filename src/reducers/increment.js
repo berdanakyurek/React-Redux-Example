@@ -1,8 +1,8 @@
 const increment = (state=0, action) => {
-    if(action == 'INCREMENT'){
+    if(action.type == 'INCREMENT'){
         return state + 1
     }
-    else if(action == 'DECREMENT'){
+    else if(action.type == 'DECREMENT'){
         return state - 1
     }
     else{
